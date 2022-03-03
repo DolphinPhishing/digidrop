@@ -1,0 +1,5 @@
+*.sqlite
+*downloads
+*.compromised
+.DS_Store
+export.json

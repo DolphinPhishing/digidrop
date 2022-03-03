@@ -1,0 +1,19 @@
+[
+    {"name": "BlackTeam", "type": "ADMIN"},
+    {"Name": "Team01", "type": "USER"},
+    {"Name": "Team02", "type": "USER"},
+    {"Name": "Team03", "type": "USER"},
+    {"Name": "Team04", "type": "USER"},
+    {"Name": "Team05", "type": "USER"},
+    {"Name": "Team06", "type": "USER"},
+    {"Name": "Team07", "type": "USER"},
+    {"Name": "Team08", "type": "USER"},
+    {"Name": "Team09", "type": "USER"},
+    {"Name": "Team10", "type": "USER"},
+    {"Name": "Team11", "type": "USER"},
+    {"Name": "Team12", "type": "USER"},
+    {"Name": "Team13", "type": "USER"},
+    {"Name": "Team14", "type": "USER"},
+    {"Name": "Team15", "type": "USER"},
+    {"Name": "RedTeam", "type": "USER"}
+]

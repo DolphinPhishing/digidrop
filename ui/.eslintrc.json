@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "react/function-component-definition": ["error", { "namedComponents": "arrow-function" }],
+    "no-unused-vars": "warn",
+    "jsx-a11y/no-autofocus": "warn",
+    "jsx-a11y/control-has-associated-label": "warn",
+    "linebreak-style": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

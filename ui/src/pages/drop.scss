@@ -1,0 +1,117 @@
+.drop-container {
+  background: #121212;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  .token-container {
+    display: flex;
+
+    .token,
+    .token-submit {
+      display: block;
+      height: 2.5rem;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      background: transparent;
+      outline: none;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: white;
+      transition: all 0.15s ease-out;
+    }
+
+    .token {
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      border-right: none;
+    }
+
+    .token:focus {
+      border-color: white;
+    }
+
+    .token-submit {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      cursor: pointer;
+    }
+
+    .token-submit:hover:not(:disabled),
+    .token-submit:focus:not(:disabled) {
+      background-color: rgba(255, 255, 255, 0.25);
+      border-color: white;
+    }
+
+    .token-submit:disabled {
+      cursor: not-allowed;
+      border-color: rgba(255, 255, 255, 0.25);
+      color: rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  .file-upload {
+    color: transparent;
+    height: 2.5rem;
+    overflow: hidden;
+  }
+
+  .file-upload::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .file-upload::before {
+    content: "Select file";
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  // .file-upload:hover::before {
+  //   border-color: black;
+  // }
+  // .file-upload:active::before {
+  //   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  // }
+
+  .confirmation-code .upload-another,
+  .file-upload::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: white;
+    transition: all 0.15s ease-out;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .upload-another:hover,
+  .upload-another:focus,
+  .file-upload:hover::before,
+  .file-upload:focus::before {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: white;
+  }
+
+  .confirmation-code {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .code {
+      font-size: 2rem;
+      background: #050505;
+      padding: 0.25rem 0.5rem;
+      box-sizing: border-box;
+      border-radius: 0.5rem;
+    }
+  }
+}

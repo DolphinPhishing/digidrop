@@ -1,0 +1,90 @@
+.admin-container {
+  background: #121212;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+  .header,
+  .file-search,
+  .file-list {
+    width: 100%;
+    padding: 1rem 10%;
+    box-sizing: border-box;
+  }
+
+  .header {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .file-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 100%;
+      padding: 0.5rem 0.22rem;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 0.25rem;
+      outline: none;
+      color: white;
+      transition: all 0.15s ease-out;
+    }
+
+    input:focus {
+      border-color: white;
+    }
+  }
+
+  .file-list {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      tr {
+        border-bottom: 1px solid white;
+
+        td,
+        th {
+          padding: 1rem 0;
+        }
+
+        td:first-of-type,
+        th:first-of-type {
+          text-align: left;
+          padding-left: 3rem;
+        }
+
+        td:last-of-type,
+        th:last-of-type {
+          text-align: right;
+          padding-right: 3rem;
+        }
+
+        td:not(:first-of-type):not(:last-of-type),
+        th:not(:first-of-type):not(:last-of-type) {
+          text-align: center;
+        }
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 0.25rem;
+      transition: all 0.15s ease-out;
+    }
+
+    a:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+      border-color: white;
+    }
+  }
+}

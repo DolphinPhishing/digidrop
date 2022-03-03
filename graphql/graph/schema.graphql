@@ -1,0 +1,30 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+scalar Upload
+
+type FileMiddleware {
+  id: ID!
+  url_id: String!
+  file_path: String!
+  accessed: Boolean!
+  user: String!
+}
+
+enum RoleLevel {
+  ADMIN
+  USER
+}
+
+directive @hasRole(roles: [RoleLevel!]!) on FIELD_DEFINITION
+
+type Query {
+  files: [FileMiddleware!]! @hasRole(roles: [ADMIN])
+  compromised: Boolean! @hasRole(roles: [ADMIN, USER])
+}
+
+type Mutation {
+  upload(file: Upload!): FileMiddleware! @hasRole(roles: [ADMIN, USER])
+  compromise: Boolean! @hasRole(roles: [ADMIN])
+}
